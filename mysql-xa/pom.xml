@@ -11,36 +11,26 @@
 
     <artifactId>mysql-xa</artifactId>
 
-    <properties>
-        <mysql.version>8.0.18</mysql.version>
-    </properties>
 
 
-    <dependencyManagement>
 
-        <dependencies>
-            <dependency>
-                <groupId>mysql</groupId>
-                <artifactId>mysql-connector-java</artifactId>
-                <version>${mysql.version}</version>
-            </dependency>
+    <dependencies>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
 
-            <!--JTA规范扩展包  -->
-            <dependency>
-                <groupId>javax.transaction</groupId>
-                <artifactId>jta</artifactId>
-                <version>1.1</version>
-            </dependency>
+        <!--JTA规范扩展包  -->
+        <dependency>
+            <groupId>javax.transaction</groupId>
+            <artifactId>jta</artifactId>
+        </dependency>
 
-            <!-- atomikos JTA/XA全局事务 -->
-            <dependency>
-                <groupId>com.atomikos</groupId>
-                <artifactId>transactions-jdbc</artifactId>
-                <version>4.0.6</version>
-            </dependency>
-
-        </dependencies>
-
-    </dependencyManagement>
+        <!-- atomikos JTA/XA全局事务 -->
+        <dependency>
+            <groupId>com.atomikos</groupId>
+            <artifactId>transactions-jdbc</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
