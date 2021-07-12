@@ -10,6 +10,7 @@
     <modules>
         <module>mysql-xa</module>
         <module>atomikos-api</module>
+        <module>spring-more-datasource-change</module>
     </modules>
     <packaging>pom</packaging>
 
